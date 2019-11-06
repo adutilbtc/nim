@@ -36,7 +36,9 @@ function cpuTurn(){
 	alert("computer counts "+turn);
 	return turn;
 	}
-	
+	/*function playAgain
+	*prompts user to play again
+	*/
 function playAgain(){
 	playAgain=prompt("play again? y for yes");
 	if(playAgain=="y"){
@@ -47,6 +49,9 @@ function playAgain(){
 		break;
 	}
 }
+/*function decalre winner
+*if the computer counts 21 player wins
+*/
 function declareWinner(){
 	if(next==0){
 		alert("you lose");
