@@ -3,7 +3,7 @@
 /*global variables */
 var games =0;
 var again=true;
-var count=0;
+var count=3;
 var turns=0;
 var next=games%2;
 var turn=0;
@@ -28,9 +28,8 @@ while(again==true){
 }
 /* functions */
 function userTurn(){
-	var	userInput=0;
-	userInput=prompt("enter number 1-3");
-	return userInput;
+	var userInput=prompt("enter number 1-3");
+	return Number(userInput);
 }
 function cpuTurn(){
 	turn=Math.floor(Math.random()*3)+1;
@@ -54,6 +53,7 @@ function declareWinner(){
 	}
 	else alert("you win");
 }
+
 function nextSwitch(next){
 	if (next==1){
 		return 0;
