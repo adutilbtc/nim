@@ -23,8 +23,11 @@ while(again==true){
 		alert("current count is "+count);
 	next=nextSwitch(next);
 		}
-		
+	declareWinner();	
 	games++;
+	if(playAgain()==false){
+		break;
+	}
 }
 /* functions */
 function userTurn(){
