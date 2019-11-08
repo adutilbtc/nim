@@ -31,8 +31,14 @@ while(again==true){
 }
 /* functions */
 function userTurn(){
-	var userInput=prompt("enter number 1-3");
-	return Number(userInput);
+	var goodTurn=false;
+	while (goodTurn==false){
+	turn=prompt("enter number 1-3");
+	if(turn>0&&turn<4){
+		goodTurn=true;
+	}
+	else alert("guess out of range try again");
+	return Number(turn);
 }
 function cpuTurn(){
 	turn=Math.floor(Math.random()*3)+1;
